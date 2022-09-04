@@ -9,7 +9,7 @@ int APowerB(int a, int b)
 {
     if (b == 1)
         return a;
-    if (b < 1)
+    else if (b < 1)
         return 0;
     return a * APowerB(a, b - 1);
 }
