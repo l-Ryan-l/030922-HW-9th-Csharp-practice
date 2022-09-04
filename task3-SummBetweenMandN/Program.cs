@@ -6,15 +6,12 @@ M = 2; N = 15 -> 120
 M = 4; N = 8 -> 30 
 */
 
- int SummBetweenMandN (int n, int m)
+int SummBetweenMandN(int n, int m)
 {
-    
     if (m > n)
-    {
         return 0;
-    }
     return m + SummBetweenMandN(n, m + 1);
 }
 
-int result = SummBetweenMandN (15, 2);
+int result = SummBetweenMandN(8, 4);
 System.Console.WriteLine(result);
